@@ -9,13 +9,29 @@ main {
     display: grid;
     height: 30vh;
     border: 1px black solid;
-    background: linear-gradient(#e66465, #9198e5) ;
+    background: linear-gradient(black, green);
 }
 
 .title {
-    color: lightseagreen;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 5px 1px 10px lime;
 }
 
 .nav-btns {
+    display: grid;
+    grid-template-columns: ;
+    justify-items: center;
+    row-gap: 5px;
     list-style-type: none;
+}
+
+li {
+    justify-content: center;
+        padding-left: -50px;
+
+}
+
+#reset-btn {
 }
