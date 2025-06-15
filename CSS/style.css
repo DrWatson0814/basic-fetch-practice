@@ -3,13 +3,15 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    background: linear-gradient(whitesmoke green black);
+    
 }
 
 main {
     display: grid;
-    height: 30vh;
+    height: 31vh;
     border: 1px black solid;
-    background: linear-gradient(black, green);
+    background: linear-gradient(black, green, whitesmoke);
 }
 
 .title {
@@ -17,6 +19,7 @@ main {
     text-align: center;
     font-size: 3em;
     text-shadow: 5px 1px 10px lime;
+    padding-left: 30px;
 }
 
 .nav-btns {
@@ -26,6 +29,27 @@ main {
     list-style-type: none;
 }
 
-.cards {
+#cards {
     height: auto;
+    align-content: space-evenly;
+    background: linear-gradient(whitesmoke green black);
+
 }
+
+article {
+    border: 5px white solid;
+    gap: 25px;
+    border-radius:  10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.cardElement {
+    margin: 25px;
+
+}
+
+
+
+@media (min-width:)
