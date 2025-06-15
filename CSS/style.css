@@ -1,55 +1,93 @@
 body {
-    display: grid;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(whitesmoke green black);
-    
+  display: grid;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-    display: grid;
-    height: 31vh;
-    border: 1px black solid;
-    background: linear-gradient(black, green, whitesmoke);
+  display: grid;
+  height: 31vh;
+  border-bottom: 3px black solid;
+  background: linear-gradient(black, green, whitesmoke);
 }
 
 .title {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 3em;
-    text-shadow: 5px 1px 10px lime;
-    padding-left: 30px;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 5px 1px 10px lime;
+  padding-left: 5px;
 }
 
 .nav-btns {
-    display: grid;
-    justify-items: center;
-    row-gap: 5px;
-    list-style-type: none;
+  display: grid;
+  justify-items: center;
+  row-gap: 5px;
+  list-style-type: none;
 }
 
 #cards {
-    height: auto;
-    align-content: space-evenly;
-    background: linear-gradient(whitesmoke green black);
-
+  background: linear-gradient(whitesmoke green black);
 }
 
 article {
-    border: 5px white solid;
-    gap: 25px;
-    border-radius:  10px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  border: 8px rgb(76, 122, 76) solid;
+  gap: 25px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 25px;
 }
 
 .cardElement {
-    margin: 25px;
-
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 5px 9px 20px 5px rgb(42, 124, 42);
 }
 
+.btn {
+  padding-right: 35px;
+}
 
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1 -1;
+    height: 100vh;
+    padding: 0;
+  }
 
-@media (min-width:)
+  .main {
+    grid-column: 1 -1;
+  }
+
+  .nav-btns {
+    display: grid;
+    row-gap: 5px;
+    list-style-type: none;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardElement {
+    margin: 25px;
+  }
+
+  .btn {
+    padding-right: 35px;
+  }
+
+  article {
+  border: 8px rgb(76, 122, 76) solid;
+
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}
