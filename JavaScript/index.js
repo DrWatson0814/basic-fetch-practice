@@ -1,3 +1,9 @@
+const getAll = document.getElementById("get-all-btn").onclick = getUsers;
+const reset = document.getElementById('reset-btn').onclick = cardReset;
+const below10 = document.getElementById('users-10-btn').onclick = under10;
+
+
+
 async function getUsers() {
   try {
     const get = await fetch("https://dan-collins-dev.github.io/dummy-data-fetching-repo/data/users.json");
@@ -18,10 +24,10 @@ async function under10() {
         console.log(elements);
       }
     }
-    }
+  }  
     catch(error) {
     console.error(error);
-    }
+  }
 }
 
 function cardReset() {
@@ -29,9 +35,7 @@ function cardReset() {
   resetCards.remove();
 }
 
-const getAll = document.getElementById("get-all-btn").onclick = getUsers;
-const reset = document.getElementById('reset-btn').onclick = cardReset;
-const below10 = document.getElementById('users-10-btn').onclick = under10;
+
 
 async function allTogether(btn) {
     const cardData = await btn;
