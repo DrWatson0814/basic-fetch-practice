@@ -83,8 +83,7 @@ article {
   }
 
   article {
-  border: 8px rgb(76, 122, 76) solid;
-
+    border: 8px rgb(76, 122, 76) solid;
     border-radius: 10px;
     background-color: black;
     color: white;
